@@ -56,6 +56,12 @@ header h1 {
   color: #00bcd4;
 }
 
+header a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .bio-text {
   max-width: 80%;
   font-size: 1rem;
