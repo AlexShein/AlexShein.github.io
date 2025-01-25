@@ -227,3 +227,36 @@ details > div > div {
     grid-template-rows: 1fr;
   }
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #121212;
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease; /* Smooth transitions */
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #1c1c1c; /* Darker shade for hover effect */
+  border-color: #1c1c1c; /* Darker border on hover */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+#arrow {
+  font-size: 22px;
+  width: 22px;
+  color: #00bcd4; /* Light blue arrow */
+  display: block;
+}
+
+#backToTop:hover #arrow {
+  color: #0097a7; /* Darker light blue on hover for the arrow */
+}

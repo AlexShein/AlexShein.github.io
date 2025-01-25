@@ -78,3 +78,26 @@ document.querySelectorAll('summary').forEach((element) =>
     }
   }),
 )
+
+// Get the button
+const backToTopButton = document.getElementById('backToTop')
+
+// Show the button when the user scrolls down 300px from the top
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    backToTopButton.style.opacity = '1' // Show button
+  } else {
+    backToTopButton.style.opacity = '0' // Hide button
+  }
+}
+
+// When the button is clicked, scroll to the top of the document
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+})
