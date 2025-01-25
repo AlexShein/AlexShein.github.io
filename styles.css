@@ -152,16 +152,19 @@ section h2 {
   display: flex;
   gap: 10px;
   overflow-x: auto;
+  padding: 10px;
   scroll-snap-type: x mandatory;
 }
 
 .carousel img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
   border-radius: 10px;
-  scroll-snap-align: start;
   border: 2px solid #00bcd4;
+  flex-shrink: 0; /* Prevent images from shrinking */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+  width: calc(100% / 2.5); /* Make images smaller on mobile */
 }
 
 footer {
