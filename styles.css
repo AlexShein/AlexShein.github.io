@@ -58,7 +58,7 @@ header h1 {
 
 a {
   color: #00bcd4;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
 }
 
