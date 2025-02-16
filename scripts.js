@@ -1,3 +1,4 @@
+// Add animation on scroll for each section
 const sections = document.querySelectorAll("section")
 const observer = new IntersectionObserver(
   (entries) => {
@@ -46,7 +47,7 @@ document.querySelectorAll("summary").forEach((element) =>
   }),
 )
 
-// Get the button
+// Control the back to top button visibility and scroll
 const backToTopButton = document.getElementById("backToTop")
 
 // Show the button when the user scrolls down 300px from the top
